@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -9,16 +10,19 @@ import { AppComponent } from './app.component';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { NameEditorComponent } from './name-editor/name-editor.component';
 import { MatFormComponent } from './mat-form/mat-form.component';
+import { TemplateReferenceFormComponent } from './template-reference-form/template-reference-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileEditorComponent,
     NameEditorComponent,
-    MatFormComponent
+    MatFormComponent,
+    TemplateReferenceFormComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     NoopAnimationsModule,
     ReactiveFormsModule,
     MatInputModule

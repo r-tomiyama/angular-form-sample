@@ -1,0 +1,10 @@
+<h3>ngFormを使う</h3>
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <label for="name">Name <input class="form-control" name="name" ngModel required />
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+  
+  <div [hidden]="!itemForm.form.valid">
+    <p>submit可能</p>
+  </div>
