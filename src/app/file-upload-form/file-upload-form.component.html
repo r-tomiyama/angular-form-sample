@@ -1,0 +1,23 @@
+<h3>ファイルアップロード</h3>
+<div
+class="drop-area"
+(click)="openFileSelectDialog()"
+(dragover)="dragOver($event)"
+(drop)="dropFiles($event)">
+<p class="message">
+  <span class="title">「ファイルをドラッグ&ドロップ」 もしくは 「クリック」してください</span><br>
+  ※クリックすると、ファイルの選択が全て解除されます。
+</p>
+<div class="file-list" *ngIf="0 < files.value.length">
+  <p>アップロードするファイル</p>
+  <ul><li *ngFor="let file of files.value">{{ file.name }}</li></ul>
+</div>
+<input
+  #fileInput
+  placeholder="ファイル"
+  type='file'
+  [accept]="acceptedTypes.join(',')"
+  (change)="inputFiles($event)"
+  multiple
+  required>
+</div>

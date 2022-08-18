@@ -11,6 +11,7 @@ import { ProfileEditorComponent } from './profile-editor/profile-editor.componen
 import { NameEditorComponent } from './name-editor/name-editor.component';
 import { MatFormComponent } from './mat-form/mat-form.component';
 import { TemplateReferenceFormComponent } from './template-reference-form/template-reference-form.component';
+import { FileUploadFormComponent } from './file-upload-form/file-upload-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TemplateReferenceFormComponent } from './template-reference-form/templa
     ProfileEditorComponent,
     NameEditorComponent,
     MatFormComponent,
-    TemplateReferenceFormComponent
+    TemplateReferenceFormComponent,
+    FileUploadFormComponent
   ],
   imports: [
     BrowserModule,
